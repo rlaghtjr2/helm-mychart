@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mychart-{{ .Release.Name }}-configmap
+data:
+  myvalue: "Hello World"
+  valueAssign: {{ .Values.testValues }}
